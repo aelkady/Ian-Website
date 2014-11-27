@@ -193,7 +193,7 @@ Navigation CSS
 	opacity:1;
 }
 
-#about, #skills, #portfolio, #contact {
+#latest, #music {
 	position:relative;
 	width:100%;
 	overflow:hidden;
@@ -203,8 +203,8 @@ Navigation CSS
 	font-family: 'Open Sans', sans-serif;
 }
 
-#about, #portfolio { background:#f6f6f6; }
-#skills, #contact { background: #fff;}
+#latest { background:#f6f6f6; }
+#music { background: #fff;}
 
 
 
@@ -231,7 +231,7 @@ Home CSS
 Latest CSS
 ****************************************** */
 
-#about {
+#latest {
 	height: 820px;
 }
 
