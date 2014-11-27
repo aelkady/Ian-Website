@@ -1,0 +1,253 @@
+/* ******************************************
+CSS Structure
+****************************************** */
+
+/* -  Global CSS */
+/* -  Navigation */
+/* -  Home CSS */
+/* -  Latest CSS */
+
+/* ******************************************
+GLOBAL CSS
+****************************************** */
+@charset "utf-8";
+
+::selection {
+	background: #666;
+	color: #FFF;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background:#eee;
+	border: thin solid lightgray;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+::-webkit-scrollbar-thumb {
+	background:#999;
+	border: thin solid gray;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+
+}
+
+body {
+	background: #f0f0f0;
+	color:#3a4047;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section a {
+	text-decoration: none; color: #7F7F7F;
+	-webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+section a:hover { text-decoration: none; }
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding: 0 0 30px 0;
+}
+
+
+h2.heading{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	text-align: center;
+	color:#3a4047;
+	padding:40px 0 60px 0;
+}
+
+/* ******************************************
+Navigation CSS
+****************************************** */
+#nav{
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	z-index: 999;
+    /*bottom: 0;*/hom
+    opacity: 0.8;
+}
+#nav a{
+	width:53px;
+	padding: 0 20px;
+	position: relative;
+	top: 20px;
+	text-decoration: none;	
+	text-transform: uppercase;
+	text-align:left;	
+	color: #fff;
+	font-weight: 300;
+	/* border-bottom: 5px solid #38ACEC; */
+
+	-moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+	
+}
+#nav a:hover {
+	color: #cacaca;
+}
+
+#nav a.home {
+	height:90px;
+	width:100px;
+	margin-top:5px;
+	float:center;
+	padding: 0;
+	top:0;
+}
+
+#nav a#overlay-menu {
+	float:left;
+	margin-right: 35px;
+	margin-top: -10px;
+}
+
+#nav a#overlay-menu:hover {
+	color: #cacaca;
+}
+
+.navigation-wrapper {
+	background: #000;
+	background: rgba(0, 0, 0, .9);
+	padding: 40px 0 0 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+	display: none;
+}
+
+.navigation {
+	padding: 40px 5% 0 5%;
+	display: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.show-menu {
+	display: block;
+}
+
+.navigation li {
+	list-style: none;
+	margin: 20px 0;
+
+}
+
+.navigation-wrapper ul.navigation li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+
+	-moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+
+}
+
+.navigation-wrapper .navigation li a:hover {
+	color: #f7505a;
+}
+
+.navigation-wrapper ul.navigation hr.smaller {
+	width:20px;
+	height:3px;
+	color:#ffcccc;
+	background: #ffcccc;
+	margin:1em auto 2em auto;
+	z-index: 1000;
+	opacity:1;
+}
+
+#about, #skills, #portfolio, #contact {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 35px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about, #portfolio { background:#f6f6f6; }
+#skills, #contact { background: #fff;}
+
+
+
+/* ******************************************
+Home CSS
+****************************************** */
+#home{
+	background: url(../images/home.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	top: 0;
+    height: 100px;
+	
+}
+#homeh1{
+	padding-top: 0px;
+    color: white;
+    font-size: 100px;
+    padding-bottom: 10px;
+}
+
+
+/* ******************************************
+Latest CSS
+****************************************** */
+
+#about {
+	height: 820px;
+}
+
+.embed-container {    
+    position: relative;    
+    padding-bottom: 30px;
+    height: 90%; 
+    overflow: hidden;
+}
+ 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {    
+    position: relative;    
+    top: 0;    
+    left: 0;    
+    width: 50%;    
+    height: 80%;
+}
