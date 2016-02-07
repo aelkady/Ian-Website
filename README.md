@@ -1,4 +1,4 @@
-Sample-Website
+Ian's Website
 ==============
 
-An example of a single-scroll website with a sticky toolbar, an embedded YouTube video and YouTube thumbnails (using the prettyPhoto library). Feel free to use and duplicate in your own projects.
+Bare bones of a website for Ian, a friend
